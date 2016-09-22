@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2016/9/20.
+ * Created by Administrator on the 2016/9/20.
  */
 console.log($.cookie() )
 var petname = $.cookie('petname')

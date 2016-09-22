@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> 回答页面 </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container dropdown">
+        <a class="navbar-brand" href="#">智游教育</a>
+        <div class="navbar-text pull-right text-right">
+                    <span class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span>姓名</span>
+                    </span>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="text-right" href="#">个人资料</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="text-right" href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <textarea name="content" class="form-control" rows="10" placeholder="请详填写回答内容"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success form-control">提交回答</button>
+    </form>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">智游教育</h4>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="scripts/answer.js"></script>
+</html>

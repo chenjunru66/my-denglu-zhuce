@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问答首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+    <style>
+        .main{
+            overflow:hidden; margin-bottom:15px; position:relative;
+z-index: 8;
+            border: 1px solid #000000;
+        }
+        .main-left{
+            width:100px; height:100px; border-radius: 50%; border:solid 5px #eee; float:left;
+        }
+        .main img{
+            width:100%;
+        }
+        .main-right{
+            float:left;
+        }
+        .main h4{
+            font-weight:bold;
+        }
+        .main>div p:last-of-type{
+            color:#666;
+        }
+        .ans-left{
+            width:100px; height:100px; border-radius: 50%; border:solid 5px #eee; float:right;
+        }
+        .ans-right{
+            float:right;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container dropdown">
+        <a class="navbar-brand" href="/">智游教育</a>
+        <div class="navbar-text pull-right text-right">
+            <span id="ask"><span class="glyphicon glyphicon-plus"></span> 提问</span>&#x3000;
+                    <span id="user" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span>登录</span>
+                    </span>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="text-right" href="user.html">个人资料</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="text-right">退出</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container questions">
+    <div class="main">
+        <div class="main-left">
+            <img src="uploads/as.jpg" alt=""/>
+        </div>
+        <div class="main-right">
+            <h4> 提问者姓名 </h4>
+            <p> 提问的内容 </p>
+            <p> 1010-10-10  10:10 </p>
+        </div>
+    </div>
+    <div class="main ans">
+        <div class="ans-left">
+            <img src="uploads/as.jpg" alt=""/>
+        </div>
+        <div class="ans-right">
+            <h4> 回答者姓名 </h4>
+            <p> 回答的内容 </p>
+            <p> 1010-10-10  10:10 </p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="scripts/index.js"></script>
+</html>
